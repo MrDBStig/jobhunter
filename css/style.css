@@ -83,6 +83,8 @@ body {
 }
 .button-text {
   margin-left: 10px;
+  font-size: 16px;
+  line-height: 19px;
 }
 .tags-cloud {
   margin-top: 25px;
