@@ -11,16 +11,34 @@
 <body>
   <header class="header">
     <div class="container">
-      <div class="row d-flex align-items-center py-4">
-        <div class="col-2">
+      <div id="mobile-menu">
+        <div class="menu-wrapper">
+          <nav class="nav-mobile-list">
+            <ul class="menu">
+              <li class="menu-item"><a href="#" class="menu-link current-page">Главная</a></li>
+              <li class="menu-item"><a href="#" class="menu-link">Вакансии</a></li>
+              <li class="menu-item"><a href="#" class="menu-link">Контакты</a></li>
+            </ul>
+          </nav>
+          <div class="log-buttons">
+            <a href="#" class="button button-login">Войти</a>
+            <a href="#" class="button button-register">Регистрация</a>
+          </div>
+          <span class="close-menu">&#10006;</span>
+        </div>
+        <!-- /.menu-wrapper -->
+      </div>
+      <!-- /.mobile-menu -->
+      <div class="row d-flex align-items-center py-4" id="desktop-menu">
+        <div class="col-lg-2 col-md-4 col">
           <a href="/" class="logo-link">
             <img src="img/logo.svg" alt="JobHunter" class="logo">
           </a>
         </div>
         <!-- /.col -->
         <div class="col d-flex align-items-center justify-content-center">
-          <nav>
-            <ul class="menu d-flex align-items-center">
+          <nav class="page-navigation">
+            <ul class="menu d-flex align-items-center" id="menu-list">
               <li class="menu-item"><a href="#" class="menu-link current-page">Главная</a></li>
               <li class="menu-item"><a href="#" class="menu-link">Вакансии</a></li>
               <li class="menu-item"><a href="#" class="menu-link">Контакты</a></li>
@@ -28,10 +46,11 @@
           </nav>
         </div>
         <!-- /.col -->
-        <div class="col-3 d-flex align-items-center justify-content-end">
+        <div class="col-3 d-lg-flex align-items-center justify-content-end d-sm-none" id="log-n-register">
           <a href="#" class="button button-login">Войти</a>
           <a href="#" class="button button-register">Регистрация</a>
         </div>
+        <span class="burger-menu col-2 d-lg-none d-sm-flex">&#9776;</span>
         <!-- /.col -->
       </div>
       <!-- /.row -->
@@ -268,6 +287,7 @@
       <!-- /.row -->
     </div>
     <!-- /.container -->
+    <script src="js/script.js"></script>
   </footer>
 </body>
 </html>
